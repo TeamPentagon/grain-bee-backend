@@ -3,7 +3,7 @@ package model
 import (
 	"log"
 
-	"github.com/TeamPentagon/DM-Backend/internal/database"
+	"github.com/TeamPentagon/grain-bee-backend/internal/database"
 	"google.golang.org/protobuf/proto"
 	//"time"
 )
