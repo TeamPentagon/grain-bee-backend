@@ -4,13 +4,14 @@ package model;
 option go_package = ".;model";
 
 message Product {
-  string id = 1;
-  string name = 2;
-  string description = 3;
-  double price = 4;
-  string category = 5;
-  repeated string images = 6;
-  int32 stock = 7;
+  string ProductId = 1;
+  string ProductName = 2;
+  string Description = 3;
+  double Price = 4;
+  string Category = 5;
+  repeated string Images = 6;
+  int32 Stock = 7;
   bool is_active = 8;
 
 }
+

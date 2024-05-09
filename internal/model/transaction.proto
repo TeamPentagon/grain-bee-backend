@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package model;
+option go_package = ".;model";
+import "internal/model/product.proto";
+
+message Transaction {
+  string TransactionId = 1; // Unique identifier for the transaction
+  string PaymentMethod = 2;
+  int64 Timestamp = 3; // Timestamp of the transaction
+  repeated Product Products = 4;
+  string Status = 5; // Transaction status (e.g., issued, pending, returned)
+  string RationCardId = 6; // Unique identifier for the ration card
+  string Address = 7;
+}
+
+
+

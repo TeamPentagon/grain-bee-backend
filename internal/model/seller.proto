@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package model;
+option go_package = ".;model";
+
+message Seller {
+  string SellerId = 1; // Unique identifier for the seller
+  string Name = 2;
+  string ContactInformation = 3; // Phone number, email, or both
+  string Address = 4;
+  string RationCategory = 5; // Category of rations provided (e.g., grains, pulses, oil)
+  string RegistrationNumber = 6; // Unique registration ID (if applicable)
+  repeated string Certifications = 7; // List of certifications held by the seller
+}
+

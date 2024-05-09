@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package model;
+option go_package = ".;model";
+
+message Admin {
+  string AdminId = 1; // Unique identifier for the admin
+  string UserName = 2;
+  string Email = 3;
+  string HashedPassword = 4; // Password should be stored securely (e.g., hashed)
+  string PhoneNumber = 5;
+}
